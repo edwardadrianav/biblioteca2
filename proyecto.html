@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <!-- CUERPO DE LA PAGINA WEB -->
 <body>
     <!-- Titulo, logo y menú de navegación -->
@@ -28,16 +29,91 @@
         </nav>
         </center>
     </header>
+
     <!-- Formulario -->
     <main style="background-color:bisque">
+        <br /> <br />
+        <!-- CREANDO UN FORMULARIO -->
         <center>
-        <h1>Titulo del formulario</h1>
-        <P>parráfo de prueba</P>
-        <P>parráfo de prueba</P>
-        <P>parráfo de prueba</P>
-        <P>parráfo de prueba</P>
+        <form id="Formulario para ingresar datos">
+            <label for="nombres">Ingrese el nombre</label>
+            <input type="text" placeholder="Ingresar nombre" id="nombres" size="20" required=true/>
+            <br/><br />
+
+            <label>Tipo de documento</label>
+            <select id="tipo_documento">
+                <option value="CC" selected>Cedula de Ciudadanía</option>
+                <option value="CE">Cedula de Extranjería</option>
+                <option value="TI">Tarjeta de Identidad</option>
+            </select>
+            <br/><br />
+
+            <label for="numero_documento">Ingresar el documento</label>
+            <input type="number" placeholder="ingrese el numero de documento" id="numero_documento" size="60" minlength="5" required=true/>
+            <br /><br />
+
+            <label for="año">año</label>
+            <input type="number" placeholder="Ingresar año" id="año" size="60" required=true min = 1900 max = 2000/>
+            <br /><br />
+
+            <label for="fecha">Ingrese la fecha</label>
+            <input type="date" id="fecha" size="60" required=true/>
+            <br /><br />
+
+            <label for="clave">Ingrese la clave</label>
+            <input type="password" id="clave"/>
+            <br /><br />
+
+            <label>Ingrese observaciones</label>
+            <select for="observaciones">
+                <textarea id="observaciones" autocomplete="on" cols="50" rows="3" minlength="10"></textarea>
+            </select>
+            <br/><br />
+
+            <label for="genero">Ingresar el genero</label>
+            <label>Femenino</label> <input type="radio" name="genero"/>
+            <label>Masculino</label> <input type="radio" name="genero"/>
+            <br/><br />
+
+            <label for="materias">Ingresar materias</label>
+            <label>Quimica</label> <input type="checkbox" name="materias"/>
+            <label>Fisica</label> <input type="checkbox" name="materias"/>
+            <label>Matemáticas</label> <input type="checkbox" name="materias"/>
+            <br/><br />
+
+            <input type="submit" id="boton" value="Guardar"/>
+
+        </form>
         </center>
+        
+        <!-- CREAR UNA TABLA -->
+            <h1>TABLA</h1>
+            <table align="center" bgcolor="#808000" border="1" cellpadding="2" cellspacing="2" width="50%">
+                <tr>
+                    <th></th>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIERCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                    <th>SABADO</th>
+                    <th>DOMINGO</th>
+
+                </tr>
+                <tr>
+                    <td>8:00 - 10:00</td>
+                    <td>MATEMATICAS</td>
+                    <td>ESPAÑOL</td>
+                    <td>C. NATURALES</td>
+                    <td>MATEMATICAS</td>
+                    <td>SOCIALES</td>
+                    <td>SIN CLASES</td>
+                    <td>SIN CLASES</td>
+                </tr>
+            </table>
+
     </main>
+
     <!-- información-->
     <footer>
         <center>
